@@ -1,0 +1,21 @@
+{%extends 'base.html'%}
+
+
+{% block title %}글 목록{% endblock %}
+
+
+
+{% block content%}
+<p>포스트 목록 화면</p>
+<!-- {{post_list}} -->
+
+{%for post in post_list%}
+<div>
+    {{post.id}}<br>
+    {{post.image}}<br>
+    {{post.content}}<br>
+    {{post.created_at}}<br>
+    {{post.writer}}<br>
+</div>
+{% endfor %}
+{% endblock %}

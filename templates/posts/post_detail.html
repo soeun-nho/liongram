@@ -1,0 +1,13 @@
+{%extends 'base.html'%}
+
+
+{%block title%} 글 상세 페이지
+{%endblock%}
+
+
+
+{%block content%}
+
+<h1>포스트Post 상세 화면</h1>
+{% include 'mixin/posts/post_card.html' with detail=True %}
+{%endblock%}
