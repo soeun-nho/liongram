@@ -1,6 +1,7 @@
+# from dataclasses import fields
 from django import forms
 from django.contrib.auth import get_user_model
-from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.forms import UserCreationForm#w장고제공
 
 class UserBaseForm(forms.ModelForm):
     class Meta:

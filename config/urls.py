@@ -13,9 +13,9 @@ urlpatterns = [
     path('cbv/', class_view.as_view()),
     path('list/', function_list_view),
     
-    path('posts/',include('posts.urls' , namespace="posts")),
     path('', index, name='index'),
-    path('accounts/',include('accounts.urls', namespace="accounts") ),
+    path('accounts/', include('accounts.urls', namespace='accounts')),
+    path('posts/', include('posts.urls', namespace='posts')),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
